@@ -9,7 +9,7 @@ class Course(models.Model):
     content = models.TextField(
         verbose_name="Contenido")
     image = models.ImageField(verbose_name="Imagen", 
-        upload_to="services")
+        upload_to="courses")
     created = models.DateTimeField(auto_now_add=True, 
         verbose_name="Fecha de creación")
     updated = models.DateTimeField(auto_now=True, 
