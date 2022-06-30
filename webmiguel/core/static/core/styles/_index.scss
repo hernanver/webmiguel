@@ -1,0 +1,65 @@
+@import "generals";
+
+//  Primer container - Card Container
+
+.primer-container {
+    height: 120vh;
+    width: 100%;
+    
+    gap: 18px;
+
+    .card {
+        background-color: beige;
+        color:black;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+
+    h5, p {
+        font-family: "montserrat";
+        font-size: 1.1em;
+        font-weight: 400;
+    }
+}
+
+
+
+
+
+
+// Segundo container - Carousel
+
+.carousel-item {
+    height: 32rem;
+    background: #777;
+    position: relative;
+
+}
+
+
+// Tercer Container - Texto y Video
+
+.tercer-container {
+    height: 80vh;
+    background-color: black;
+
+        .text-h-3c {
+            font-family: "Koulen";
+            color: white;
+            font-size: 2em;
+        }
+
+        .text-p-3c {
+            font-family: "montserrat";
+            color: white;
+            font-size: 1.5em;
+        }
+
+        .video {
+            width: 500px;
+            height: 400px;
+        }
+
+}

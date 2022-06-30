@@ -1,0 +1,23 @@
+
+.footer {
+  color: black;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: pink;
+
+  .derechos p {
+      font-size: 1.5em;
+  }
+
+  .iconos {
+      display: flex;
+      gap: 30px;
+
+      i {
+          font-size: 35px;
+      }
+  }
+}

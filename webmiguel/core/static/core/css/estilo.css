@@ -1,0 +1,1323 @@
+/* ------------------------ FUENTE ------------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Forum&family=Koulen&family=Montserrat:wght@100&family=Parisienne&family=Questrial&family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Forum&family=Koulen&family=Parisienne&family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Forum&family=Koulen&family=Montserrat:wght@100&family=Parisienne&family=Questrial&display=swap");
+/* ------------------------ GENERALES ------------------------ */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* ------------------------ 1ST SECTION INDEX------------------------ */
+.premium {
+  background-color: black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+.premium .img-fs {
+  width: 40vw;
+  border-radius: 30%;
+  margin: 0 auto;
+}
+
+.premium .texto-fs {
+  color: white;
+  font-family: "montserrat";
+  gap: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.premium .texto-fs h2 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.premium .texto-fs p {
+  font-size: 2em;
+  letter-spacing: 0.1em;
+}
+
+.premium .b {
+  font-family: "montserrat";
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  height: 50px;
+  width: 230px;
+  cursor: pointer;
+  -webkit-transition: 2s ease all;
+  transition: 2s ease all;
+  overflow: hidden;
+}
+
+.premium .b:hover {
+  background-color: orange;
+  opacity: 0.7;
+  -webkit-animation: 2s ms 1;
+          animation: 2s ms 1;
+}
+
+.premium .b a {
+  text-decoration: none;
+  color: white;
+}
+
+.premium .b a:hover {
+  color: black;
+}
+
+/* ------------------------ 2nd SECTION INDEX------------------------ */
+.range {
+  background-color: white;
+  text-align: center;
+  color: black;
+  width: 100%;
+  height: 70vh;
+  font-family: "montserrat";
+}
+
+.range .row-h-ss {
+  height: 20vh;
+}
+
+.range .row-h-ss .h2-ss {
+  font-size: 6em;
+  font-weight: bold;
+}
+
+.range .row-h-ss .product {
+  font-family: "montserrat";
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  height: 58px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 230px;
+  letter-spacing: 2px;
+}
+
+.range .row-h-ss .product:hover {
+  background-color: orange;
+  color: black;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.range .row-h-ss .product a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+.range .row-h-ss .product aa:hover {
+  color: black;
+}
+
+.range .row-h-ss .see {
+  height: 100px;
+  width: 230px;
+  cursor: pointer;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+  background-color: black;
+  -webkit-transition-property: all;
+  transition-property: all;
+  margin: 0 auto;
+}
+
+.range .row-h-ss .see:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.range .row-h-ss .see a {
+  text-decoration: none;
+  font-family: "montserrat";
+  font-size: 1.8em;
+  font-weight: bold;
+  background-color: transparent;
+  color: white;
+}
+
+.range .row-h-ss .see a:hover {
+  color: orange;
+}
+
+/* ------------------------ 3RD SECTION INDEX ------------------------ */
+.third-content {
+  background-color: black;
+  height: 1000px;
+}
+
+.third-content .qualy-title {
+  font-size: 4em;
+  color: white;
+  font-family: "montserrat";
+  font-weight: bold;
+  text-align: center;
+}
+
+.third-content .qualy-text {
+  color: white;
+  font-family: "montserrat";
+  font-size: 2.5em;
+  width: 85%;
+  text-align: center;
+}
+
+.third-content .qualy-b {
+  width: 230px;
+  height: 50px;
+  font-size: 1em;
+  color: white;
+  font-weight: bold;
+  border: 2px solid grey;
+  background-color: transparent;
+  font-family: "montserrat";
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px 10px #d7d7d7;
+          box-shadow: 2px 2px 10px #d7d7d7;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+  -webkit-transition-property: all;
+  transition-property: all;
+}
+
+.third-content .qualy-b:hover {
+  background-color: orange;
+  color: black;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.third-content .qualy-b a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.third-content .video {
+  width: 550px;
+  height: 355px;
+}
+
+/* ------------------------ 4TH SECTION INDEX ------------------------ */
+.four-content {
+  height: 100vh;
+}
+
+.four-content .row1 {
+  height: 70vh;
+}
+
+.four-content .row1 .f-text {
+  font-size: 4em;
+  font-family: "montserrat";
+  font-weight: bold;
+}
+
+.four-content .row1 .img-final {
+  height: 53vh;
+  width: 40vw;
+  border-radius: 40%;
+}
+
+.four-content .row2 {
+  height: 30vh;
+}
+
+.four-content .row2 .f-button {
+  width: 230px;
+  height: 50px;
+  font-family: "montserrat";
+  font-size: 1.5em;
+  font-weight: bold;
+  border: 3px solid rgba(205, 119, 28, 0.5);
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.four-content .row2 .f-button:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  color: orange;
+  background-color: black;
+  font-size: 1.2em;
+}
+
+.four-content .row2 .f-button a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.four-content .row2 .f-button a:hover {
+  color: orange;
+  font-size: 1.2em;
+}
+
+/* ------------------------ FOOTER INDEX------------------------ */
+.footer {
+  color: white;
+  width: 100%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+}
+
+.footer .derechos p {
+  font-size: 1.5em;
+}
+
+.footer .iconos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.footer .iconos i {
+  font-size: 35px;
+}
+
+@media (max-width: 1400px) {
+  /* ------------------------ 1ST SECTION INDEX ------------------------ */
+  .banner-image {
+    height: 70vh;
+  }
+  .premium .texto-fs p {
+    font-size: 1.7em;
+  }
+  .premium .texto-fs h2 {
+    font-size: 2.7em;
+  }
+  /* ------------------------ 3RD SECTION INDEX ------------------------ */
+  .third-content .qualy-content {
+    gap: 10px;
+  }
+  .third-content .qualy-title {
+    font-size: 3.2em;
+  }
+  .third-content .qualy-text {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 1250px) {
+  /* ------------------------ 3RD SECTION INDEX ------------------------ */
+  .third-content {
+    height: auto;
+  }
+  .third-content .video-ts {
+    display: none;
+  }
+  /* ------------------------ 4th SECTION INDEX ------------------------ */
+  .four-content {
+    height: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* ------------------------ 1ST SECTION INDEX ------------------------ */
+  .premium {
+    width: 100%;
+    height: auto;
+  }
+  .premium .texto-fs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
+  }
+  .premium .texto-fs p {
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+  }
+  .premium .texto-fs h2 {
+    font-size: 2.5em;
+  }
+  .premium .texto-fs .b {
+    margin: 0 auto;
+  }
+  .premium .img-fss {
+    display: none;
+  }
+  /* ------------------------ 2ND SECTION INDEX ------------------------ */
+  .range {
+    height: auto;
+  }
+  .range .row-h-ss .h2-ss {
+    font-size: 4em;
+  }
+  .range .row-h-ss .see {
+    height: auto;
+    width: auto;
+  }
+  .range .grid-butt {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /* ------------------------ 3RD SECTION INDEX ------------------------ */
+  .video-ts {
+    display: none;
+  }
+  .third-content {
+    height: auto;
+  }
+  /* ------------------------ 4TH SECTION INDEX ------------------------ */
+  .four-content .row1 {
+    height: auto;
+  }
+  .four-content .row1 .img-div {
+    display: none;
+  }
+  .four-content .row2 {
+    height: auto;
+  }
+}
+
+@media (max-width: 850px) {
+  /* ------------------------ 2ND SECTION INDEX ------------------------ */
+  .range .row-h-ss .h2-ss {
+    font-size: 3.2em;
+  }
+  /* ------------------------ 3RD SECTION INDEX ------------------------ */
+  .third-content {
+    height: auto;
+  }
+  .third-content .qualy-b {
+    width: 200px;
+    height: 70px;
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 480px) {
+  /* ------------------------ 1ST SECTION INDEX ------------------------ */
+  .premium {
+    height: auto;
+  }
+  /* ------------------------ 2ND SECTION INDEX ------------------------ */
+  .range {
+    height: auto;
+  }
+  .range .div-h2-ss {
+    display: none;
+  }
+  .range .grid-butt {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    gap: 15px;
+  }
+  .range .row-h-ss .see {
+    height: auto;
+    width: auto;
+    font-size: 0.7em;
+    margin-top: 30px;
+  }
+  /* ------------------------ 3RD SECTION INDEX ------------------------ */
+  .third-content .qualy-text {
+    font-size: 1.8em;
+  }
+  .third-content .qualy-title {
+    font-size: 3em;
+  }
+  /* ------------------------ 4TH SECTION INDEX ------------------------ */
+  .four-content .row1 .f-text {
+    font-size: 3em;
+  }
+}
+
+/* ------------------------ 1ST SECTION PRODUCT PAGE ------------------------ */
+.p-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+}
+
+.p-section .texto-page {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 65px;
+}
+
+.p-section .texto-page h2 {
+  font-family: "forum";
+  font-size: 5em;
+  letter-spacing: 2px;
+}
+
+.p-section .texto-page p {
+  font-family: "forum";
+  font-size: 1.6em;
+  margin-top: 50px;
+}
+
+.p-section .img-page {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 400px 400px;
+      grid-template-columns: 400px 400px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.p-section .img-page .foto figure img {
+  width: 430px;
+  height: 250px;
+}
+
+/* ------------------------ 2ND SECTION PRODUCT PAGE ------------------------ */
+.scnd-p {
+  font-family: "montserrat";
+  font-size: 4em;
+}
+
+.card h3 {
+  font-family: "quicksand";
+  font-size: 1.6em;
+}
+
+.card p {
+  font-family: "quicksand";
+}
+
+.card .img {
+  width: 100%;
+  height: 300px;
+}
+
+@media (max-width: 1400px) {
+  /* -------------------- 2ND SECTION PRODUCT PAGE -------------------- */
+  .scnd-p {
+    margin-bottom: 70px;
+    margin-left: 40px;
+    font-size: 5em;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* ------------------------ 1ST SECTION PRODUCT PAGE ------------------------ */
+  .p-section .texto-page h2 {
+    font-size: 4em;
+  }
+  .p-section .texto-page p {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 850px) {
+  /* ------------------------ 1ST SECTION PRODUCT PAGE ------------------------ */
+  .p-section .img-page {
+    display: none;
+  }
+  .p-section .texto-page h2 {
+    font-size: 3em;
+  }
+  .p-section .texto-page p {
+    font-size: 1.3em;
+  }
+  /* ------------------------ 2ND SECTION PRODUCT PAGE ------------------------ */
+  .scnd-p {
+    margin-top: 20px;
+    font-size: 3.7em;
+  }
+  .card h3 {
+    font-family: "quicksand";
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  /* ------------------------ 1ST SECTION PRODUCT PAGE ------------------------ */
+  .p-section .texto-page {
+    margin-top: 25px;
+    padding: 10px;
+  }
+  .p-section .texto-page h2 {
+    font-size: 2em;
+  }
+  .p-section .texto-page p {
+    font-size: 1em;
+  }
+  /* ------------------------ 2ND SECTION PRODUCT PAGE ------------------------ */
+  .scnd-p {
+    font-size: 2.5em;
+    margin-left: 20px;
+    margin-bottom: 40px;
+  }
+  .card {
+    width: auto;
+    height: auto;
+  }
+}
+
+/* ------------------------ GENERALES ------------------------ */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* ------------------------ 1ST SECTION SERVICES PAGE ------------------------ */
+.s-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+  padding: 20px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 65px;
+}
+
+.s-section h2 {
+  font-family: "forum";
+  font-size: 4.5em;
+  letter-spacing: 2px;
+}
+
+.s-section p {
+  font-family: "forum";
+  font-size: 2.2em;
+}
+
+/* ------------------------ 2ND SECTION SERVICES PAGE -------------------- */
+.s-services {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+      grid-template-areas: "texto img";
+}
+
+.s-services .s-texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-family: "montserrat";
+  margin: 30px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: texto;
+}
+
+.s-services .s-texto h2 {
+  font-family: "forum";
+  font-size: 4.5em;
+  letter-spacing: 1px;
+}
+
+.s-services .s-texto p {
+  font-size: 2.2em;
+}
+
+.s-services .s-img {
+  height: 53vh;
+  width: 40vw;
+}
+
+@media (max-width: 1250px) {
+  /* ------------------------ 2nd SECTION SERVICES ------------------------ */
+  .s-services .s-img {
+    height: 40vh;
+    width: 30vw;
+  }
+}
+
+@media (max-width: 850px) {
+  /* ------------------------ 1ST SECTION SERVICES PAGE ------------------------ */
+  .s-section {
+    padding: 0;
+  }
+  .s-section h2 {
+    font-size: 2.7em;
+    letter-spacing: 0px;
+  }
+  .s-section .s-section p {
+    font-size: 1.3em;
+  }
+  /* ------------------------ 2ND SECTION SERVICES PAGE ------------------------ */
+  .s-services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .s-services .s-texto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .s-services .s-texto h2 {
+    font-size: 2.7em;
+  }
+  .s-services .s-texto p {
+    font-size: 1.3em;
+  }
+  .s-texto-header {
+    display: none;
+  }
+  .s-services img {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  /* ------------------------ 1ST SECTION SERVICE PAGE ------------------------ */
+  .s-section {
+    margin-top: 10px;
+  }
+  .s-section h2 {
+    font-size: 1.5em;
+  }
+  .s-section p {
+    font-size: 1em;
+    margin-top: 10px;
+  }
+  /* ------------------------ 2ND SECTION SERVICE PAGE ------------------------ */
+  .s-services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+  }
+  .s-services .s-texto {
+    margin: 10px;
+    width: 90%;
+  }
+  .s-services .s-texto h2 {
+    font-size: 1.5em;
+  }
+  .s-services .s-texto p {
+    font-size: 1em;
+  }
+}
+
+/* ------------------------  1ST SECTION RESOURCES PAGE ------------------------ */
+.r-section {
+  background-color: black;
+  height: auto;
+}
+
+.r-section .r-img {
+  width: 70%;
+  height: 60vh;
+  opacity: 0.9;
+}
+
+.r-section .r_texto {
+  font-family: "forum";
+  font-size: 5em;
+  letter-spacing: 2px;
+  color: white;
+  background-color: black;
+  margin-left: 40px;
+}
+
+.r-section .submit {
+  -webkit-transition: ease 2s all;
+  transition: ease 2s all;
+}
+
+.r-section .submit:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.btnnnn, .btn--amarillo {
+  width: 150px;
+}
+
+.btn--amarillo {
+  background-color: yellow;
+}
+
+@media (max-width: 1400px) {
+  /* ------------------------ 1ST SECTION RESOURCES ------------------------ */
+  .r-section .img-div .r-img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* ------------------------  1ST SECTION RESOURCES PAGE ------------------------ */
+  .r-section {
+    height: auto;
+  }
+  .r-section .r_texto {
+    font-size: 4.5em;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 850px) {
+  /* ------------------------ 1ST SECTION RESOURCES ------------------------ */
+  .content {
+    margin-top: 0px;
+  }
+  .r-texto-header {
+    font-size: 1.5em;
+    line-height: 3.6vw;
+  }
+  .r-section {
+    height: auto;
+  }
+  .r-section .img-div {
+    display: none;
+  }
+  .r-section .col-6 {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .r-section .r_texto {
+    font-size: 3.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  /* ------------------------ 1ST SECTION RESOURCES ------------------------ */
+  .r-section img {
+    display: none;
+  }
+}
+
+/* ------------------------ HEADER INDEX------------------------ */
+.banner-image {
+  background-image: url(../images/lomo.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.logo {
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  opacity: 0.9;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: white;
+  font-size: 2.1em;
+  font-weight: bolder;
+  font-family: "montserrat";
+}
+
+.h1-header {
+  color: whitesmoke;
+  font-size: 7vw;
+  font-weight: 500;
+  font-family: "forum";
+  letter-spacing: 1vw;
+  margin-bottom: 50px;
+}
+
+/* ------------------------ HEADER PRODUCT PAGE ------------------------ */
+.banner-image-pp {
+  background-color: black;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("../images/carneCruda.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/carneCruda.jpeg");
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: left;
+  height: 100vh;
+}
+
+.p-nav {
+  opacity: 1;
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+}
+
+.p-texto {
+  width: 50%;
+  color: white;
+  font-family: "montserrat";
+  font-size: 2em;
+}
+
+.title-xl {
+  color: white;
+  font-family: "montserrat";
+  font-size: 8.5vw;
+  line-height: 8vw;
+}
+
+.title-xxl {
+  color: white;
+  font-size: 10.5vw;
+  line-height: 9vw;
+  font-weight: bold;
+  font-family: "forum";
+}
+
+/* ------------------------ HEADER SERVICES PAGE ------------------------ */
+.banner-image-sp {
+  background-color: black;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("../images/butcher.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/butcher.jpeg");
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: left;
+  height: 100vh;
+}
+
+.s-texto-header {
+  color: white;
+  font-family: "montserrat";
+  font-size: 2em;
+  line-height: 4vw;
+  width: 60%;
+}
+
+/* ------------------------ HEADER RESOURCES PAGE ------------------------ */
+.banner-image-rp {
+  background-color: black;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("../images/brochet.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/brochet.jpeg");
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: right;
+  height: 85vh;
+}
+
+.r-texto-header {
+  color: white;
+  font-family: "montserrat";
+  font-size: 2em;
+  line-height: 4vw;
+  width: 90%;
+}
+
+.content {
+  margin-top: 100px;
+}
+
+/* ------------------------ HEADER CONTACT-US PAGE ------------------------ */
+.cu-header {
+  height: 170px;
+  background-color: black;
+}
+
+/* ------------------------ 1ST SECTION INDEX ------------------------ */
+@-webkit-keyframes ms {
+  70% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+@keyframes ms {
+  70% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+/* ---------------------------------------------------- RESPONSIVE ------------------------ */
+@media (max-width: 1024px) {
+  /* ------------------------ HEADER INDEX ------------------------ */
+  .nav ul li a {
+    font-size: 1.3em;
+  }
+  .banner-image {
+    height: 70vh;
+  }
+  .logo {
+    height: 100px;
+    width: 100px;
+    opacity: 0.9;
+  }
+  .header {
+    height: 600px;
+  }
+  /* ------------------------ HEADER  PRODUCT PAGE ------------------------ */
+  .banner-image-pp {
+    height: 70vh;
+  }
+  .p-header .p-texto {
+    width: 60vw;
+    margin: 0 auto;
+    gap: 15px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .p-header p {
+    font-size: 1.8em;
+    line-height: 3.5vw;
+  }
+  .title-xxl {
+    font-size: 9.8vw;
+    line-height: 8.5vw;
+  }
+  .title-xl {
+    font-size: 8.5vw;
+    line-height: 8vw;
+  }
+  /* ------------------------ HEADER  RESOURCES PAGE ------------------------ */
+  .banner-image-rp,
+  .banner-image-sp {
+    height: 70vh;
+  }
+  .r-texto {
+    width: 80%;
+    gap: 25px;
+    margin-left: 30px;
+    margin-top: 25px;
+  }
+  .r-header .r-texto .title-xl {
+    font-size: 2.5em;
+  }
+  .r-header .r-texto .title-xxl {
+    font-size: 2.8em;
+  }
+  .r-header p {
+    font-size: 1.5em;
+    line-height: 3vw;
+  }
+}
+
+@media (max-width: 850px) {
+  /* ------------------------ HEADER INDEX ------------------------ */
+  .banner-image-pp,
+  .banner-image-rp,
+  .banner-image-sp {
+    height: 50vh;
+  }
+  .banner-image {
+    height: 40vh;
+  }
+  .h1-header {
+    display: none;
+  }
+  .logo {
+    height: 120px;
+    width: 120px;
+  }
+  .nav ul li a {
+    font-weight: 900;
+  }
+  /* ------------------------ HEADER  PRODUCT PAGE ------------------------ */
+  .p-header {
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .p-texto {
+    display: none;
+  }
+  .logo-p {
+    height: 100px;
+    width: 100px;
+  }
+  /* ------------------------ HEADER SERVICES PAGE ------------------------ */
+  .s-header {
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /* ------------------------ HEADER RESOURCES PAGE ------------------------ */
+  .r-texto-header {
+    width: 100%;
+    font-size: 1.5em;
+    line-height: 4vh;
+  }
+  .chau {
+    display: none;
+  }
+  /* -------------------- HEADER CONTACT US PAGE --------------- */
+  .cu-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cu-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0px;
+  }
+  .cu-nav {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* ------------------------ HEADER INDEX ------------------------ */
+  .banner-image-pp,
+  .banner-image-rp,
+  .banner-image-sp {
+    height: 40vh;
+  }
+  .nav {
+    margin: 0 auto;
+  }
+  .nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 0px;
+  }
+  .logo {
+    height: 90px;
+    width: 90px;
+  }
+  .nav ul li a {
+    font-size: 0.6em;
+  }
+  /* ------------------------ PRODUCT PAGE HEADER ------------------------ */
+  .p-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 50vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .p-nav {
+    margin: 0 auto;
+  }
+  .p-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0px;
+    gap: 0;
+  }
+  .logo-p {
+    height: 80px;
+    width: 80px;
+    margin: 0;
+  }
+  .p-nav ul li a {
+    font-size: 0.7em;
+  }
+  /* ------------------------ SERVICES PAGE HEADER ------------------------ */
+  .s-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 50vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .r-texto-header {
+    display: none;
+  }
+  /* ------------------------ RESOURCES PAGE HEADER ------------------------ */
+  .r-header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+  }
+  .r-header img {
+    margin: 0 auto;
+  }
+  .r-texto {
+    margin: 0;
+  }
+  .r-header .r-texto .title-xl {
+    font-size: 1em;
+    line-height: 5vh;
+  }
+  .r-header .r-texto .title-xxl {
+    font-size: 1em;
+  }
+  /* ------------------------ FOOTER INDEX ------------------------ */
+  .footer {
+    height: 20vh;
+  }
+  .iconos {
+    gap: 20px;
+  }
+  .iconos i {
+    font-size: 25px;
+  }
+  .derechos p {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */
