@@ -19,6 +19,10 @@ from django.conf import settings
 
 
 urlpatterns = [
+    #Paths de productos
+    path('products/', include('products.urls')),
+    #Paths de services
+    path('services/', include('services.urls')),
     #Paths de courses
     path('courses/', include('courses.urls')),
     # Paths del core
