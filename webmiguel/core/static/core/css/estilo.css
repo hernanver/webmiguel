@@ -704,8 +704,7 @@ html {
           align-items: flex-start;
   font-family: "montserrat";
   margin: 30px;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
+
   grid-area: texto;
 }
 
