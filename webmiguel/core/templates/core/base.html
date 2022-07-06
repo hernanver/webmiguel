@@ -20,18 +20,15 @@
     />
     <title>Home</title>
   </head>
-  <body>
+  
     <header>
       <!-- Nav-Bar -->
 
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"
-            ><img
-              class="logo"
-              src="https://dummyimage.com/150x150/17d914/141a66.png&text=Logo"
-              alt="logo"
-          /></a>
+          <a class="navbar-brand" href="#">
+            <img class="logo"  src='core/images/logo.jpg' alt="logo"/>
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -48,28 +45,28 @@
             <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="{% url 'home' %}"
-                  >Home |</a
+                  >Home </a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="{% url 'services' %}">Servicios |</a>
+                <a class="nav-link active" href="{% url 'services' %}">Servicios </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="{% url 'courses' %}">Cursos |</a>
+                <a class="nav-link active" href="{% url 'courses' %}">Cursos </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="{% url 'products' %}"
-                  >Productos |</a
+                  >Productos </a
                 >
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="{% url 'about' %}"
-                  >Sobre Nosotros |</a
+                  >Sobre Nosotros </a
                 >
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="{% url 'contact' %}"
-                  >Reserve Su Cita |</a
+                  >Reserve Su Cita </a
                 >
               </li>
             </ul>
@@ -99,12 +96,12 @@
         </div>
       </div>
     </header>
-
+    <body>
     <!-- Contenido -->
     {% block content %} {% endblock %}
 
     <!-- Footer -->
-
+  </body>
     <footer class="footer">
       <div class="derechos">
          <p class="m-0 mbt">
@@ -146,5 +143,5 @@
       src="https://kit.fontawesome.com/0149485272.js"
       crossorigin="anonymous"
     ></script>
-  </body>
+ 
 </html>
