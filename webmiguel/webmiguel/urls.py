@@ -25,6 +25,8 @@ urlpatterns = [
     path('services/', include('services.urls')),
     #Paths de courses
     path('courses/', include('courses.urls')),
+    #Paths de pages
+    path('page/', include('pages.urls')),
     # Paths del core
     path('', include('core.urls')),
     # Paths del admin

@@ -9,6 +9,8 @@
 
     <!-- Css stylesheet -->
     <link rel="stylesheet" href="{% static 'core/css/style.css' %}" />
+    
+    
     <!-- Boostrap link -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -105,8 +107,17 @@
 
     <footer class="footer">
       <div class="derechos">
-        <p>&copy; Proyect</p>
-      </div>
+         <p class="m-0 mbt">
+          <!--<a href="sample.html" class="link">Política de privacidad</a> ·
+          <a href="sample.html" class="link">Aviso legal</a> ·
+          <a href="sample.html" class="link">Cookies</a>-->
+          {% load pages_extras %}
+          {% get_page_list as page_list %}
+          {% for page in page_list %}
+            <a href="{% url 'page' page.id page.title|slugify %}" class="link">{{page.title}}</a> {% if not forloop.last %}·{% endif %} 
+          {% endfor %}
+        </p>
+        <p class="m-0 mbt1">&copy; Brun'ails 2022</p>
       <div class="iconos">
         <div>
           <i class="fa-brands fa-facebook"></i>
@@ -119,6 +130,9 @@
         </div>
       </div>
     </footer>
+    
+        
+       
 
     <!-- Boostrap js -->
     <script
