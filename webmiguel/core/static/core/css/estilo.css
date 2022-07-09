@@ -1318,5 +1318,12 @@ html {
   .derechos p {
     font-size: 20px;
   }
+  .link-footer
+{ text-decoration: none;
+  color: white;
+  font-size: 2.1em;
+  font-weight: bolder;
+  font-family: "montserrat";}
+
 }
 /*# sourceMappingURL=estilo.css.map */
