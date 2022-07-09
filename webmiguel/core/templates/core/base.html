@@ -102,7 +102,7 @@
 
     <!-- Footer -->
   </body>
-    <footer class="footer">
+    <footer class="footer" >
       <div class="derechos">
          <p>
           <a href="sample.html" class="link-footer">Política de privacidad</a> ·
@@ -114,8 +114,8 @@
             <a href="{% url 'page' page.id page.title|slugify %}" class="link">{{page.title}}</a> {% if not forloop.last %}·{% endif %} 
           {% endfor %}-->
         </p>
-        
-        <p class="mbt1">&copy; Brun'ails 2022</p>
+     
+        <p>&copy; Brun'ails 2022</p>
       <div class="iconos">
         <div>
           <i class="fa-brands fa-facebook "></i>
@@ -127,7 +127,8 @@
           <i class="fa-solid fa-envelope"></i>
         </div>
       </div>
-      </div>
+    </div>
+      
     </footer>
     
         

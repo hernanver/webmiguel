@@ -127,6 +127,10 @@
 
 .footer .iconos i {
   font-size: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
 }
 
 .mbtm{
