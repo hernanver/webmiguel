@@ -102,22 +102,23 @@
 
     <!-- Footer -->
   </body>
-    <footer class="footer">
+    <footer class="footer" >
       <div class="derechos">
-         <p class="m-0 mbt">
-          <!--<a href="sample.html" class="link">Política de privacidad</a> ·
-          <a href="sample.html" class="link">Aviso legal</a> ·
-          <a href="sample.html" class="link">Cookies</a>-->
-          {% load pages_extras %}
+         <p>
+          <a href="sample.html" class="link-footer">Política de privacidad</a> ·
+          <a href="sample.html" class="link-footer">Aviso legal</a> ·
+          <a href="sample.html" class="link-footer">Cookies</a>
+         <!-- {% load pages_extras %}
           {% get_page_list as page_list %}
           {% for page in page_list %}
             <a href="{% url 'page' page.id page.title|slugify %}" class="link">{{page.title}}</a> {% if not forloop.last %}·{% endif %} 
-          {% endfor %}
+          {% endfor %}-->
         </p>
-        <p class="m-0 mbt1">&copy; Brun'ails 2022</p>
+     
+        <p>&copy; Brun'ails 2022</p>
       <div class="iconos">
         <div>
-          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-facebook "></i>
         </div>
         <div>
           <i class="fa-brands fa-twitter"></i>
@@ -126,6 +127,8 @@
           <i class="fa-solid fa-envelope"></i>
         </div>
       </div>
+    </div>
+      
     </footer>
     
         
