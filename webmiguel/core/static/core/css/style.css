@@ -4,9 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Forum&family=Koulen&family=Montserrat:wght@100;400;700&family=Parisienne&family=Questrial&family=Quicksand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Forum&family=Koulen&family=Parisienne&family=Questrial&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Forum&family=Koulen&family=Montserrat:wght@100&family=Parisienne&family=Questrial&display=swap");
-body{
-  background-color:  #FFE6E6 ;
-}
+
 
 * {
   padding: 0;
@@ -18,16 +16,49 @@ body{
   margin: 0;
 }
 
+
+
+.fixed-header {
+
+  padding: 0px 0px;
+  color: #FFE6E6;
+  background: #FFE6E6;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Page content */
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+#link-header{
+  color: black;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement */
+.sticky + .content {
+  padding-top: 102px;
+}
 .primer-container {
- 
   background-color: #FFE6E6;
-  gap: 18px;
-    
+  gap: 18px; 
 }
 
 .primer-container .card {
   background-color:whitesmoke;
-  
 }
 
 .primer-container .card-body {
@@ -101,7 +132,7 @@ body{
   font-size: 1.4em;
   font-family: "montserrat";
   font-weight: 400;
-  color: black;
+  color: ;
 }
 
 .footer {
@@ -120,8 +151,7 @@ body{
 }
 
 .footer .derechos p  {
-  font-size: 1.5em;
-   
+  font-size: 1.5em;  
 }
 
  .footer .iconos {
