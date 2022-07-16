@@ -95,9 +95,44 @@
 }
 
 .carousel-item {
-  height: 32rem;
+  height: 40rem;
   background: #777;
   position: relative;
+}
+
+.carousel-grande{
+  margin: 50px;
+}
+
+.carousel-interior {
+  margin:0px;
+ 
+}
+.primera-division{
+  padding-right:0px;
+  padding-left: 0px;
+}
+.segunda-division
+{
+  background-color: rgb(247, 233, 240);
+  margin:0px;
+  padding-right:0px;
+  padding-left: 0px;
+  
+}
+.titulo-servicio {
+  font-size: 5rem;
+  font-family: "Poppins", Arial, sans-serif;
+  align-items: center;
+}
+.descripcion-servicio{
+  font-size: 2rem;
+  padding-left: 20px;
+  align-items: center;
+}
+
+.boton-servicio{
+  align-items: flex-end;
 }
 
 .tercer-container {
@@ -303,6 +338,7 @@
 
 .service-image:hover img {transition: all 0.3s ease-out;}
 .service-image:hover img {transform: scale(1.2, 1.2);}
+
 
 
 

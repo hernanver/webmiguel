@@ -7,106 +7,78 @@
 {% block title %}Servicios{% endblock %}
 
 {% block content %}
-  {% for service in services %}
-  <section>
-      <div class="primer-container">
-      <div id="container2">	
-        
-        <!-- Start	Service details -->
-          <div class="service-details">
-            
-            <!-- 	Service Name -->
-          <h1>{{service.title}}</h1>
-        
-          <span class="hint-star star">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-          </span>
-            
-          
-        <!-- The most important information about the Service -->
-            <p class="information">{{service.content}}</p>
-            <button class="btn">
-              Hire        
-            </button>       
-        </div>
-        <!-- 	End	Service details   -->
-          
-        <!-- 	Start Service image & Information -->
-          
-        <div class="service-image">
-          
-          <img src="{{service.image.url}}" alt="Omar Dsoky">
-          
-        <!-- 	Service Information-->
-        <div class="info">
-          <h2>The Description</h2>
-          <ul>
-            <li><strong> </strong>Full Sun</li>
-            <li><strong>Soil Needs: </strong>Damp</li>
-            <li><strong>Zones: </strong>9 - 11</li>
-            <li><strong>Height: </strong>2 - 3 feet</li>
-            <li><strong>Blooms in: </strong>Mid‑Summer - Mid‑Fall</li>
-            <li><strong>Features: </strong>Tolerates heat</li>
-          </ul>
-        </div>
-      </div>
-      </div>
-    
-    </section>
-    {% endfor %}
-    
+
+<div
+id="carouselWithIndicators"
+class="carousel slide carousel-grande"
+data-bs-ride="carousel"
+>
+<ol class="carousel-indicators">
+  <li
+    data-bs-target="#carouselWithIndicators"
+    data-bs-slide-to="0"
+    class="active"
+  ></li>
+  <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="1"></li>
+  <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="2"></li>
+</ol>
+
+
+<div class="carousel-inner">
+  <div class="active row carousel-interior">
+    <div class="col segunda-division"> 
+      <h2 class="titulo-servicio">service.title</h2>
+      <p class="descripcion-servicio">service.content</p>
+      <button type="button" class="boton-servicio btn btn-outline-dark mb-2 py-3 px-4">Reserva una cita</button>
+			<button type="button" class="boton-servicio btn btn-dark mb-2 py-3 px-4">Opiniones</button>
+    </div>
+  <div class="col primera-division">
+    <img 
+    src="{% static 'core/images/nail1.jpg' %}"
+    class="d-block w-100 slide-1"
+    alt="Slide 1"
+  />
+</div>
+</div>  
+<div class="row carousel-interior">
+  <div class="col segunda-division"> 
+    <h2 class="titulo-servicio">service.title</h2>
+    <p class="descripcion-servicio">service.content</p>
+    <button type="button" class="boton-servicio btn btn-outline-dark mb-2 py-3 px-4">Reserva una cita</button>
+    <button type="button" class="boton-servicio btn btn-dark mb-2 py-3 px-4">Opiniones</button>
+  </div>
+<div class="col primera-division">
+  <img 
+  src="{% static 'core/images/nail1.jpg' %}"
+  class="d-block w-100 slide-1"
+  alt="Slide 1"
+/>
+</div>
+</div>  
+</div>
+
+<a
+  class="carousel-control-prev"
+  href="#carouselWithIndicators"
+  role="button"
+  data-bs-slide="prev"
+>
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+</a>
+<a
+  class="carousel-control-next"
+  href="#carouselWithIndicators"
+  role="button"
+  data-bs-slide="next"
+>
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+</a>
+</div>
+   
+{% for service in services %}
+{% endfor %}
+
 {% endblock %}
 
-{% comment %} 
-
-        <!-- Start	Service details -->
-        <div class="service-details">
-            
-          <!-- 	Service Name -->
-        <h1>Servicio 1</h1>
-      
-        <span class="hint-star star">
-          <i class="fa fa-star" aria-hidden="true"></i>
-          <i class="fa fa-star" aria-hidden="true"></i>
-          <i class="fa fa-star" aria-hidden="true"></i>
-          <i class="fa fa-star" aria-hidden="true"></i>
-          <i class="fa fa-star" aria-hidden="true"></i>
-        </span>
-          
-        
-      <!-- The most important information about the Service -->
-          <p class="information">"Contenido"</p>
-          <button class="btn">
-            Hire        
-          </button>       
-      </div>
-      <!-- 	End	Service details   -->
-        
-      <!-- 	Start Service image & Information -->
-        
-      <div class="service-image">
-        
-        <img src="https://sc01.alicdn.com/kf/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3/200006212/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3.jpg" alt="Omar Dsoky">
-        
-      <!-- 	Service Information-->
-      <div class="info">
-        <h2>The Description</h2>
-        <ul>
-          <li><strong> </strong>Full Sun</li>
-          <li><strong>Soil Needs: </strong>Damp</li>
-          <li><strong>Zones: </strong>9 - 11</li>
-          <li><strong>Height: </strong>2 - 3 feet</li>
-          <li><strong>Blooms in: </strong>Mid‑Summer - Mid‑Fall</li>
-          <li><strong>Features: </strong>Tolerates heat</li>
-        </ul>
-      </div>
-    </div>
-    </div>
-
-
-    </div>
-     {% endcomment %}
