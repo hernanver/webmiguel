@@ -44,9 +44,9 @@ p {
 }
 
 .page-section {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  background: #FFE6E6;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  background: white;
 }
 
 .section-heading {
@@ -55,7 +55,7 @@ p {
 
 .section-heading .section-heading-upper {
   display: block;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 800;
   padding-bottom:.5rem;
 
@@ -63,11 +63,11 @@ p {
 
 .section-heading .section-heading-lower {
   display: block;
-  font-size: 2.5rem;
+  font-size: 1rem;
   font-weight: 800;
-  font-family: "Poppins", Arial, sans-serif;
+  font-family:unset;
   text-transform: uppercase;
-  color:black;
+
   margin-bottom: 1rem;
 }
 
@@ -83,13 +83,24 @@ p {
 }
 
 .bg-faded {
+  background-color:#FFE6E6 ;
+  width: 50vw;
+  z-index: 1;
+  position: relative;
+  margin-bottom: -3rem;
+margin-right: 5rem;
+  
+}
+.bg-faded2 {
   background-color:white ;
   width: 30vw;
   z-index: 1;
   position: relative;
   margin-bottom: -3rem;
- 
-
+  border-radius: 10px;
+  border-bottom: #FFE6E6;
+  border-color: #FFE6E6;
+  
 }
 
 #mainNav {

@@ -376,13 +376,19 @@
 
 
 /* PRODUCTOS */
-
+.big-container{
+  background-color: white;
+  
+  padding-top: 5px;
+  padding-bottom: 100px;
+}
 .small-container{
   max-width: 1080px;
   margin: auto;
   padding-left:25px;
   padding-right: 25px;
   margin-top: 50px;
+  background-color: white;
 }
 .col-4{
   flex-basis:25%;
@@ -409,6 +415,7 @@ margin: 0 auto 80px;
 position: relative;
 line-height: 60px;
 color:#555;
+font-family:initial;
 }
 
 .title-products::after{
