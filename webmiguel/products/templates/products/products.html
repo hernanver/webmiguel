@@ -7,7 +7,28 @@
 {% block title %}Productos{% endblock %}
 
 {% block content %}
+<div class="small-container">
+  <h2 class="title-products">Productos</h2>
+  <div class="row">
+  {% for product in products reversed %}
+    <div class="col-4">
+        <img src="{{product.image.url}}" alt="">
+        <h4>{{product.title}}</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>${{product.price}}</p>
+    </div>
 
+
+  {% endfor %}
+  </div>
+</div>
+{% comment %} 
  <div class="container-fluid  row p-5 g-0 primer-container">
     <div class="card col">
       <img
@@ -69,7 +90,7 @@
     
 
     <div class="suscription-container"></div>
-  </div>
+  </div> {% endcomment %}
 
  
  

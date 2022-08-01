@@ -132,6 +132,14 @@
   color:black;
   margin-bottom: 1rem;
 }
+.titulo-contacto {
+  font-size: 50px;
+  font-weight: 800;
+  font-family: "Poppins", Arial, sans-serif;
+  text-transform: uppercase;
+  color:black;
+  margin-bottom: 1rem;
+}
 .descripcion-servicio {
     padding-left: 10rem;
     font-family: "Poppins", Arial, sans-serif;
@@ -215,6 +223,15 @@
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+}
+.fa-brands:hover{
+  color:white;
+}
+.fa-solid:hover{
+  color:white;
+}
+.link-footer:hover{
+  color:white;
 }
 
 .mbtm{
@@ -353,11 +370,66 @@
 .service-image:hover img {transform: scale(1.2, 1.2);}
 
 
+.titulo-about h1{
+  align-items: center;
+}
 
 
+/* PRODUCTOS */
+
+.small-container{
+  max-width: 1080px;
+  margin: auto;
+  padding-left:25px;
+  padding-right: 25px;
+  margin-top: 50px;
+}
+.col-4{
+  flex-basis:25%;
+  padding:10px;
+  min-width: 200px;
+  margin-bottom:50px;
+  transition: transform 0.5s;
+  text-align: center;
 
 
+}
+.col-4 img{
+  width: 100%;
 
+}
+.col-4 h4{
+  font-size:20px;
+  text-align: center;
+}
 
+.title-products{
+text-align: center;
+margin: 0 auto 80px;
+position: relative;
+line-height: 60px;
+color:#555;
+}
 
+.title-products::after{
+  content:'';
+  background: #FFE6E6;
+  width:80px;
+  height:5px;
+  border-radius:5px;
+  position:absolute;
+  bottom:0;
+  left:50%;
+  transform: translateX(-50%);
+}
+.rating .fa{
+  color:#FFE6E6;
+}
+.col-4 p{
+  font-size: 14px;
+}
+
+.col-4:hover{
+  transform: translateY(-5px);
+}
 /*# sourceMappingURL=style.css.map *

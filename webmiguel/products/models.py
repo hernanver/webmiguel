@@ -8,6 +8,7 @@ class Product(models.Model):
         verbose_name="Subtítulo")
     content = models.TextField(
         verbose_name="Contenido")
+    price = models.CharField(max_length=10, verbose_name="Precio", default='DEFAULT VALUE')
     image = models.ImageField(verbose_name="Imagen", 
         upload_to="products")
     created = models.DateTimeField(auto_now_add=True, 
