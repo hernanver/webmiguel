@@ -44,9 +44,9 @@ p {
 }
 
 .page-section {
-  margin-top: 0rem;
-  margin-bottom: 0rem;
-  background: white;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  background: #FFE6E6;
 }
 
 .section-heading {
@@ -55,7 +55,7 @@ p {
 
 .section-heading .section-heading-upper {
   display: block;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 800;
   padding-bottom:.5rem;
 
@@ -63,12 +63,8 @@ p {
 
 .section-heading .section-heading-lower {
   display: block;
-  font-size: 1rem;
-  font-weight: 800;
-  font-family:unset;
-  text-transform: uppercase;
-
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 100;
 }
 
 
@@ -78,31 +74,15 @@ p {
   text-transform: none;
   font-weight: 300;
   margin-top:.5rem;
-  
-  
 }
 
 .bg-faded {
-  background-color:#FFE6E6 ;
-  width: 50vw;
-  z-index: 1;
-  position: relative;
-  margin-bottom: -3rem;
-margin-right: 5rem;
-  
-}
-.bg-faded2 {
-  background-color:white ;
-  width: 30vw;
-  z-index: 1;
-  position: relative;
-  margin-bottom: -3rem;
-  border-radius: 10px;
-  border-bottom: #FFE6E6;
-  border-color: #FFE6E6;
-  
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
+.nav-item:hover{
+color:#FFE6E6
+}
 #mainNav {
   background-color: rgba(47, 23, 15, 0.9);
   font-family: 'Raleway';
@@ -217,23 +197,21 @@ margin-right: 5rem;
 @media (min-width: 992px) {
   .product-item .product-item-title {
     position: relative;
-    opacity: 0.7;
+    background-color: black;
     z-index: 1;
     margin-bottom: -3rem;
-    
   }
   .product-item .product-item-img {
     position: relative;
     z-index: 0;
-    max-width: 55vw;
+    max-width: 100vw;
   }
   .product-item .product-item-description {
     position: relative;
-    opacity: 0.7;
     z-index: 1;
     margin-top: -8rem;
-    max-width: 40vw;
-    right: -40rem;
+    max-width: 30vw;
+    right: -30rem;
   }
 }
 

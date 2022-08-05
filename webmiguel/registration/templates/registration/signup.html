@@ -1,0 +1,45 @@
+
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Registro{% endblock %}
+{% block content %}
+
+<style>.errorlist{color:red;} label{display:none}</style>
+<main role="main">
+  <div class="container">
+    <div class="row mt-3">
+      <div class="col-md-9 mx-auto mb-5">
+
+        <form action="" method="post">{% csrf_token %}
+          <h3 class="mb-4">Registro</h3>
+          {{form.as_p}}
+          <p><input type="submit" class="btn btn-primary btn-block" value="Confirmar"></p>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}
+
+
+{% comment %} {% extends 'core/base.html' %}
+
+{% block content %}
+
+<h1>Inscribirse</h1>
+<form method="POST">
+    {% csrf_token %}
+
+<p>
+    <label for="username">Nombre</label>
+    <input id="username" type="text" name="username">
+</p>
+<p>
+    <label for="password">Contraseña</label>
+    <input id="password" type="password" name="password">
+</p>
+<button type="submit">Inscribirse</button>
+</form>
+
+{% endblock %} {% endcomment %}

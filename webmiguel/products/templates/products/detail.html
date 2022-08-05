@@ -24,24 +24,13 @@
           <i class="fa fa-star"></i>
           <i class="fa fa-star-o"></i>
         </div>
-        {% comment %} <a href="{{ product.get_absolute_url }}">Ver el articulo</a> {% endcomment %}
         <p>${{product.price}}</p>
     </div>
 
 
   {% endfor %}
 
-  {% for product in products %}
-  <h2>{{ product.name}}</h2>
-  <img src="{{ product.thumbnail.url }}" alt="{{ product.name }}" style="max-width: 250px;">
-  {% comment %} <a href="{{ product.get_absolute_url }}">Ver el articulo</a> {% endcomment %}
-  {% endfor %}
+
 
   </div>
 </div>
-
-
- 
-
-
-{% endblock %}

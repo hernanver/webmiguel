@@ -75,15 +75,33 @@
             </li>
           </ul>
           <form class="p-1 d-flex">
-            <input
+            |<ul class="navbar-nav">
+              {% if not request.user.is_authenticated %}
+                <li class="nav-item">
+                  <a id="link-header" class="nav-link active" aria-current="page" href="{% url 'login' %}" 
+                    >Acceder </a
+                  >
+                  <li class="nav-item">
+                    <a id="link-header" class="nav-link active" aria-current="page" href="{% url 'signup' %}"
+                      >Registro </a
+                    >
+                </li>
+
+              {% else %}
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'logout' %}"> Salir </a>
+                </li>
+              {% endif %}
+            </ul>
+            {% comment %} <input
               type="text"
               readonly=""
               class="form-control-plaintext"
               id="staticInput"
               placeholder="Enter your email"
-            />
+            /> {% endcomment %}
 
-            <button id="link-header" class="btn btn-outline-light" type="submit">Login</button>
+            {% comment %} <button id="link-header" class="btn btn-outline-light" type="submit">Login</button> {% endcomment %}
           </form>
         </div>
       </div>

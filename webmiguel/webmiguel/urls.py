@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
+# from products.views import product_detail
 
 
 urlpatterns = [
@@ -33,6 +34,11 @@ urlpatterns = [
     path('', include('core.urls')),
     # Paths del admin
     path('admin/', admin.site.urls),
+    # Paths de registracion
+    path('accounts/', include('django.contrib.auth.urls')),
+    #Paths de auth
+
+    path('accounts/',include('registration.urls')),
 ]
 
 if settings.DEBUG:

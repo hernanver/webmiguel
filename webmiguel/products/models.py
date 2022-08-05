@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 # Create your models here.
 class Product(models.Model):
@@ -6,6 +7,8 @@ class Product(models.Model):
         verbose_name="Título")
     subtitle = models.CharField(max_length=200, 
         verbose_name="Subtítulo")
+    # slug= models.SlugField(max_length=128)
+    # stock= models.IntegerField(default=0)
     content = models.TextField(
         verbose_name="Contenido")
     price = models.CharField(max_length=10, verbose_name="Precio", default='DEFAULT VALUE')
@@ -23,3 +26,7 @@ class Product(models.Model):
 
     def __str__(self):
           return self.title
+
+    # def get_absolute_url(self):
+    #     return reverse("product", kwargs={"slug": self.slug})
+    
