@@ -26,6 +26,12 @@
         </div>
         <p>${{ product.price }}</p>
         <p>Quedan {{ product.stock }} en stock.</p>
+
+        {% if user.is_authenticated %}
+        <p>
+          <a href="{% url 'add-to-cart' product.slug %}">Agregar al carrito</a>
+        </p>
+        {% endif %}
     </div>
 
 

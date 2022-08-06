@@ -163,3 +163,5 @@ if DEBUG:
 else:
     #Aca hay que configurar un email real para produccion
     pass
+
+AUTH_USER_MODEL = "registration.Shopper"

@@ -1,6 +1,8 @@
 from django.db import models
 from django.urls import reverse
 
+from webmiguel.settings import AUTH_USER_MODEL
+
 # Create your models here.
 class Product(models.Model):
     title = models.CharField(max_length=200, 
@@ -32,6 +34,27 @@ class Product(models.Model):
     def get_absolute_url(self):
         return reverse("product", kwargs= {"slug": self.slug})
     
+
+class Order(models.Model):
+    user = models.ForeignKey(AUTH_USER_MODEL, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    quantity= models.IntegerField(default=1)
+    ordered= models.BooleanField(default=False)
+    ordered_date = models.DateTimeField(blank=True, null=True)
+    
+    def __str__(self):
+        return f"{self.product} ({self.quantity})"
+
+
+
+class Cart(models.Model):
+    user = models.OneToOneField(AUTH_USER_MODEL, on_delete=models.CASCADE)
+    orders = models.ManyToManyField(Order)
+    ordered = models.BooleanField(default=False)
+    ordered_date = models.DateTimeField(blank=True, null=True)
+    
+    def __str__(self):
+        return self.user.username
 
     # def get_absolute_url(self):
     #     return reverse("product", kwargs={"slug": self.slug})
