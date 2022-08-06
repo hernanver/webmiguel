@@ -26,6 +26,8 @@
         </div>
         {% comment %} <a href="{{ product.get_absolute_url }}">Ver el articulo</a> {% endcomment %}
         <p>${{product.price}}</p>
+        <a href="{{ product.get_absolute_url }}"><button type="button" class="boton-servicio btn btn-outline-dark mb-2 py-1 px-2">Ver el producto</button></a>
+
     </div>
 
 
@@ -34,7 +36,6 @@
   {% for product in products %}
   <h2>{{ product.name}}</h2>
   <img src="{{ product.thumbnail.url }}" alt="{{ product.name }}" style="max-width: 250px;">
-  {% comment %} <a href="{{ product.get_absolute_url }}">Ver el articulo</a> {% endcomment %}
   {% endfor %}
 
   </div>

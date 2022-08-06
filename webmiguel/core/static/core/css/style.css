@@ -16,7 +16,9 @@
   margin: 0;
 }
 
-
+.nav-link:hover{
+  color:white;
+}
 
 .fixed-header {
 
@@ -190,6 +192,10 @@
   font-weight: 400;
   color:hotpink ;
 }
+.nav-item:hover{
+  color:white !important;
+  font-size: 1.45em;
+}
 
 .footer {
   color: black;
@@ -233,6 +239,7 @@
 .link-footer:hover{
   color:white;
 }
+
 
 .mbtm{
   padding-top: 5rem;
@@ -398,6 +405,16 @@
   transition: transform 0.5s;
   text-align: center;
 
+
+}
+.col-4pr{
+  align-items: center;
+  flex-basis:25%;
+  padding:10px;
+  min-width: 200px;
+  margin-bottom:50px;
+  transition: transform 0.5s;
+  text-align: center;
 
 }
 .col-4 img{

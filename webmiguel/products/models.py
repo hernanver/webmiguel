@@ -5,13 +5,15 @@ from django.urls import reverse
 class Product(models.Model):
     title = models.CharField(max_length=200, 
         verbose_name="Título")
+    slug = models.SlugField(max_length=128)
     subtitle = models.CharField(max_length=200, 
         verbose_name="Subtítulo")
     # slug= models.SlugField(max_length=128)
     # stock= models.IntegerField(default=0)
     content = models.TextField(
         verbose_name="Contenido")
-    price = models.CharField(max_length=10, verbose_name="Precio", default='DEFAULT VALUE')
+    price = models.FloatField(max_length=10, verbose_name="Precio", default='0.0')
+    stock = models.IntegerField(default=0)
     image = models.ImageField(verbose_name="Imagen", 
         upload_to="products")
     created = models.DateTimeField(auto_now_add=True, 
@@ -25,7 +27,11 @@ class Product(models.Model):
         ordering = ['-created']
 
     def __str__(self):
-          return self.title
+          return f"{self.title} ({self.stock})"
+
+    def get_absolute_url(self):
+        return reverse("product", kwargs= {"slug": self.slug})
+    
 
     # def get_absolute_url(self):
     #     return reverse("product", kwargs={"slug": self.slug})
