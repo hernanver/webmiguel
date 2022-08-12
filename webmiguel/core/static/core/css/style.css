@@ -32,6 +32,15 @@
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
 }
 
+/*Home*/
+.descripcion-empresa {
+font-family:"montserrat";
+color: #FFE6E6;
+font-size: 2 rem;
+text-align: center !important;
+tec
+}
+
 
 /* Page content */
 
@@ -161,8 +170,8 @@
 
 
 .tercer-container {
-  height: 80vh;
   background-color: black;
+text-align: justify;
 }
 
 .tercer-container .text-h-3c {
@@ -186,6 +195,8 @@
   background-image: url(../images/pina.jpg);
   background-size: cover;
   height: 100vh;
+ 
+
 }
 
 .nav-item {
