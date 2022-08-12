@@ -29,7 +29,8 @@
 
         {% if user.is_authenticated %}
         <p>
-          <a href="{% url 'add-to-cart' product.slug %}">Agregar al carrito</a>
+         
+          <a href="{% url 'add-to-cart' product.slug %}"><button type="button" class="boton-servicio btn btn-dark mb-2 py-1 px-4">Add to cart</button></a>
         </p>
         {% endif %}
     </div>

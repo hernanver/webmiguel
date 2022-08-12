@@ -197,7 +197,6 @@ color:#FFE6E6
 @media (min-width: 992px) {
   .product-item .product-item-title {
     position: relative;
-    background-color: black;
     z-index: 1;
     margin-bottom: -3rem;
   }

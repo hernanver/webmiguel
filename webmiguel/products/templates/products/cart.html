@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Productos{% endblock %}
+
+{% block content %}
+
+
+{% comment %} {% for order in orders %}
+  
+  <h2>{{ order.product.title }}</h2>
+  <img src="{{ order.product.image.url }}" alt="">
+  <p>({{ order.quantity }})en el carrito</p>
+  <i class="bi bi-cart-plus-fill"></i>
+  {% endfor %}
+  {% endcomment %}
+
+
+ 
+<div class="wrap cf">
+  <h1 class="projTitle">Shopping Cart</h1>
+  <div class="heading cf">
+    <h1>My Cart</h1>
+    <li class="totalRow"><a href="{% url 'products' %}" class="btn continue">Continue Shopping</a></li>
+
+  </div> 
+
+  {% for order in orders %}
+  <div class="cart">
+<!--    <ul class="tableHead">
+      <li class="prodHeader">Product</li>
+      <li>Quantity</li>
+      <li>Total</li>
+       <li>Remove</li>
+    </ul>-->
+    
+    <ul class="cartWrap">
+      <li class="items odd">
+        
+    <div class="infoWrap"> 
+        <div class="cartSection">
+        <img src="{{ order.product.image.url }}" alt="" class="itemImg" />
+          <p class="itemNumber">#QUE-007544-002</p>
+          <h3>{{ order.product.title }}</h3>
+        
+           <p> <input type="text"  class="qty" placeholder="{{ order.quantity }}"/> x ${{ order.product.price }}</p>
+        
+          <p class="stockStatus"> {{ order.product.stock }} In Stock</p>
+        </div>  
+    
+        
+        <div class="prodTotal cartSection">
+          <p>$ {{ order.calculo_total }}</p>
+        </div>
+              <div class="cartSection removeWrap">
+                <a href="{% url 'delete-cart' %}" class="remove" >x</a>
+        </div>
+      </div>
+      </li>
+      </ul>
+      {% endfor %}
+      {% comment %} <li class="items even">
+        
+       <div class="infoWrap"> 
+        <div class="cartSection">
+         
+        <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
+          <p class="itemNumber">#QUE-007544-002</p>
+          <h3>Item Name 1</h3>
+        
+           <p> <input type="text"  class="qty" placeholder="3"/> x $5.00</p>
+        
+          <p class="stockStatus"> In Stock</p>
+        </div>  
+    
+        
+        <div class="prodTotal cartSection">
+          <p>$15.00</p>
+        </div>
+              <div class="cartSection removeWrap">
+           <a href="#" class="remove">x</a>
+        </div>
+      </div>
+      </li>
+      
+            <li class="items odd">
+             <div class="infoWrap"> 
+        <div class="cartSection">
+            
+        <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
+          <p class="itemNumber">#QUE-007544-002</p>
+          <h3>Item Name 1</h3>
+        
+           <p> <input type="text"  class="qty" placeholder="3"/> x $5.00</p>
+        
+          <p class="stockStatus out"> Out of Stock</p>
+        </div>  
+    
+        
+        <div class="prodTotal cartSection">
+          <p>$15.00</p>
+        </div>
+                    <div class="cartSection removeWrap">
+           <a href="#" class="remove">x</a>
+        </div>
+              </div>
+      </li> {% endcomment %}
+      <li class="items even">
+       <div class="infoWrap"> 
+        <div class="cartSection info">
+             
+        <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
+          <p class="itemNumber">#QUE-007544-002</p>
+          <h3>Item Name 1</h3>
+        
+          <p> <input type="text"  class="qty" placeholder="3"/> x $5.00</p>
+        
+          <p class="stockStatus"> In Stock</p>
+          
+        </div>  
+    
+        
+        {% comment %} <div class="prodTotal cartSection">
+          <p>$15.00</p>
+        </div>
+    
+            <div class="cartSection removeWrap">
+           <a href="#" class="remove">x</a>
+        </div>
+         </div>
+         <div class="special"><div class="specialContent">Free gift with purchase!, gift wrap, etc!!</div></div>
+      </li>
+       {% endcomment %}
+      
+      <!--<li class="items even">Item 2</li>-->
+ 
+    </ul>
+  </div>
+
+
+  {% for order in orders %}
+
+  <p>{{ order.total_carrito }}</p> 
+
+  {% endfor %}
+
+
+
+  total=+ 
+   
+  
+    <p>Aqui{{ cart.total_carrito }}</p>
+  <div class="promoCode"><label for="promo">Have A Promo Code?</label><input type="text" name="promo" placholder="Enter Code" />
+  <a href="#" class="btn"></a></div>
+  
+  <div class="subtotal cf">
+    <ul>
+      <li class="totalRow"><span class="label">Subtotal</span><span class="value">--</span></li>
+      
+          <li class="totalRow"><span class="label">Shipping</span><span class="value">--</span></li>
+      
+            <li class="totalRow"><span class="label">Tax</span><span class="value">--</span></li>
+            <li class="totalRow final"><span class="label">Total</span><span class="value"></span>$ </li>
+      <li class="totalRow"><a href="#" class="btn continue">Checkout</a></li>
+    </ul>
+  </div>
+</div>
+
+
+{% endblock %}

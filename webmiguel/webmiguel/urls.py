@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
+from products.views import cart, delete_cart
+
 # from products.views import product_detail
 
 
@@ -37,8 +39,10 @@ urlpatterns = [
     # Paths de registracion
     path('accounts/', include('django.contrib.auth.urls')),
     #Paths de auth
-
     path('accounts/',include('registration.urls')),
+    #Paths del carrito
+    path('cart/', cart, name="cart"),
+    path('cart/delete/', delete_cart, name="delete-cart")
 ]
 
 if settings.DEBUG:
