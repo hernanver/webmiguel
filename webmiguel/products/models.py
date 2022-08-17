@@ -67,6 +67,23 @@ class Order(models.Model):
         
         return (Order.suma_final)
 
+    def delete_product(self, *args, **kwargs):
+        for order in self.orders.all():
+            order.ordered = True
+            order.ordered_date = timezone.now()
+            order.save()
+
+        del self.product
+        super().delete(*args, **kwargs)
+
+    def eliminar(self,product):
+        id = str(product)
+        if product in self.order:
+            del self.product
+            self.order.save()
+
+    
+
 
     
 
@@ -104,3 +121,9 @@ class Cart(models.Model):
 
         self.orders.clear()
         super().delete(*args, **kwargs)
+
+    # def eliminar(self, producto):
+    #     id = str(producto.id)
+    #     if id in self.orders.all():
+    #         del self.order.product[id]
+    #         self.order.save()

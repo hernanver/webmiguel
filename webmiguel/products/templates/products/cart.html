@@ -59,6 +59,10 @@
                 <a href="{% url 'delete-cart' %}" class="remove" >x</a>
         </div>
       </div>
+      <div class="cartSection ">
+        <a href="{% url 'delete-producto' %}" class="remove" >x</a>
+</div>
+      </div>
       </li>
       </ul>
       {% endfor %}
@@ -165,6 +169,7 @@
             <li class="totalRow"><span class="label">Tax</span><span class="value">--</span></li>
             <li class="totalRow final"><span class="label">Total</span><span class="value"></span>$ </li>
       <li class="totalRow"><a href="#" class="btn continue">Checkout</a></li>
+      
     </ul>
   </div>
 </div>

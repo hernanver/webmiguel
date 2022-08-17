@@ -34,10 +34,25 @@ def cart(request):
     return render(request, 'products/cart.html', context={"orders":cart.orders.all()})
 
 def delete_cart(request):
-
+   
     if cart := request.user.cart:
         cart.delete()
 
     return redirect('products')
+
+def delete_producto(request):
+   
+    order = Order(request)
+    product = Product.objects.filter()
+    order.product.eliminar()
+    
+
+    return redirect('products')
+
+# def eliminar_producto(request, producto_id):
+#     carrito = Order(request)
+#     producto = Product.objects.get(id=producto_id)
+#     carrito.eliminar(producto)
+#     return redirect("products")
 
     
